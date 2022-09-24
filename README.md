@@ -18,3 +18,12 @@ When copying a directory, the default is not to recurse.
 The program maintains a checksum database to know what parts of the files are already copied,
 so that a restart of the program will continue where it left off.
 
+## How to build
+
+	git clone --recurse-submodules https://github.com/amirgeva/rcopy
+	cd rcopy
+	mkdir build
+	cd build
+	cmake ..
+	
+Under Linux, use make to build rcopy.  On Windows with Visual Studio, open the solution and build.
